@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sushil Shakya Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+        .contact-info {
+            background-color: #2ecc71;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        .skills, .experience, .education, .awards {
+            margin-top: 30px;
+        }
+        h2 {
+            color: #3498db;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #3498db;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sushil Shakya</h1>
+        <p>A detail-oriented professional in customer service, team leadership, and online fulfillment</p>
+    </header>
+
+    <section class="contact-info">
+        <div>
+            <i class="fas fa-map-marker-alt"></i> 27 Queen St, Ashfield
+        </div>
+        <div>
+            <i class="fas fa-phone"></i> 0401851971
+        </div>
+        <div>
+            <i class="fas fa-envelope"></i> Email / Website
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Key Skills</h2>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Strong Customer Service and Communication</li>
+            <li><i class="fas fa-check-circle"></i> Team Leadership and Supervision</li>
+            <li><i class="fas fa-check-circle"></i> Front Desk Operations</li>
+            <li><i class="fas fa-check-circle"></i> Problem Solving and Conflict Resolution</li>
+            <li><i class="fas fa-check-circle"></i> Sales and Marketing Assistance</li>
+            <li><i class="fas fa-check-circle"></i> Time Management and Adaptability</li>
+            <li><i class="fas fa-check-circle"></i> Online Order Fulfillment and Accuracy</li>
+            <li><i class="fas fa-check-circle"></i> CRM Tools (Salesforce, Zendesk, StarRez)</li>
+            <li><i class="fas fa-check-circle"></i> Coding Fundamentals (JavaScript, Minecraft, Roblox)</li>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <strong>Code Camp, Sydney — Lead Instructor</strong><br>
+                July 2022 - Present<br>
+                Teaching STEM through game development (Minecraft, Roblox, JavaScript).
+            </li>
+            <li>
+                <strong>Woolworths, Ashfield — Supervisor, Online Department</strong><br>
+                April 2024 - August 2024<br>
+                Managing online order fulfillment, mentoring teams, and process improvements.
+            </li>
+            <li>
+                <strong>Campus Living Villages, Parramatta — Duty Manager</strong><br>
+                Dec 2022 - July 2024<br>
+                Managed residential facilities, conducted safety audits, and resolved resident concerns.
+            </li>
+        </ul>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>UTS College, Sydney</strong> — Diploma of IT (2019 - 2021)
+            </li>
+            <li>
+                <strong>Victoria University, Sydney</strong> — Bachelors of IT (2021 - 2024)
+            </li>
+        </ul>
+    </section>
+
+    <section class="awards">
+        <h2>Awards</h2>
+        <ul>
+            <li>Winner, Mobile Application Project - GovHack NSW 2022</li>
+            <li>Winner, Web Application Project - GovHack NSW 2022</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sushil Shakya | Designed with passion and creativity</p>
+    </footer>
+
+    <script>
+        // Example functionality - Popup on click
+        document.querySelector('.contact-info').addEventListener('click', function() {
+            alert('Thank you for visiting my portfolio!');
+        });
+    </script>
+</body>
+</html>
