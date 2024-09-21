@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags and title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sushil Shakya Portfolio</title>
+    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -16,17 +16,17 @@
             padding: 0;
         }
         header {
-            background-color: #f0ad4e; /* Lighter orange */
-            color: #fff;
+            background-color: #2c3e50; /* Dark blue */
+            color: #ecf0f1; /* Light text */
             padding: 40px 0;
             text-align: center;
-            border-bottom: 5px solid #e67e22;
+            border-bottom: 5px solid #34495e; /* Darker blue */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
             font-size: 3.5em;
-            text-shadow: 2px 2px #e67e22;
+            text-shadow: 2px 2px #34495e;
         }
         section {
             padding: 30px;
@@ -58,8 +58,8 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
         h2 {
-            color: #e74c3c;
-            text-shadow: 1px 1px #c0392b;
+            color: #2980b9; /* Blue */
+            text-shadow: 1px 1px #1c5985; /* Darker blue */
         }
         ul {
             list-style-type: none;
@@ -77,7 +77,7 @@
             background-color: #e0f7fa; /* Lighter cyan */
         }
         footer {
-            background-color: #34495e; /* Lighter navy */
+            background-color: #34495e; /* Dark navy */
             padding: 10px 0;
             text-align: center;
             color: white;
@@ -96,11 +96,13 @@
         .contact-info div a:hover {
             text-decoration: underline;
         }
+        /* Awards section now has the same background as other sections */
+        /* Removed custom background color */
         .awards {
-            background-color: #f1c40f;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Additional styles if needed */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
         .contact-form {
             background-color: #ecf0f1;
@@ -117,7 +119,7 @@
             background-color: #f8f9fa;
         }
         .contact-form button {
-            background-color: #e74c3c;
+            background-color: #2980b9; /* Matching the new heading color */
             color: white;
             border: none;
             padding: 12px 24px;
@@ -126,7 +128,7 @@
             transition: background-color 0.3s;
         }
         .contact-form button:hover {
-            background-color: #c0392b;
+            background-color: #1c5985;
         }
     </style>
 </head>
@@ -192,7 +194,7 @@
                 <strong>UTS College, Sydney</strong> — Diploma of IT (2019 - 2021)
             </li>
             <li>
-                <strong>Victoria University, Sydney</strong> — Bachelors of IT (2021 - 2024)
+                <strong>Victoria University, Sydney</strong> — Bachelor of IT (2021 - 2024)
             </li>
         </ul>
     </section>
@@ -207,7 +209,7 @@
 
     <section class="contact-form">
         <h2>Contact Me</h2>
-        <form action="mailto:sushilsayshello@gmail.com" method="post" enctype="text/plain">
+        <form action="/submit_form.php" method="post">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -221,6 +223,7 @@
         </form>
     </section>
 
+
     <script>
         // Interactive alert on clicking phone number
         document.querySelector('.contact-info div a[href^="tel"]').addEventListener('click', function(event) {
@@ -229,6 +232,8 @@
 
         // Form submission confirmation
         document.querySelector('.contact-form form').addEventListener('submit', function(event) {
+            // Commented out to allow actual form submission
+            // event.preventDefault();
             alert('Your message has been sent successfully!');
         });
 
